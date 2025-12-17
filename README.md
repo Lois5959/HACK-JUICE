@@ -1,13 +1,34 @@
 # OWASP Juice Shop – Pentesting Project
 
-Projet de pentesting réalisé sur OWASP Juice Shop dans le cadre du module B-SEC-100 (Hack & Juice).
+Projet de **tests d’intrusion (pentesting)** réalisé sur l’application volontairement vulnérable  
+**OWASP Juice Shop**, dans le cadre du module **B-SEC-100 – Hack & Juice**.
+
+Ce projet a pour objectif de développer des compétences pratiques en sécurité applicative
+en exploitant des vulnérabilités issues de l’**OWASP Top 10**.
+
+---
 
 ## Objectifs
-- Résoudre des challenges OWASP Top 10
-- Documenter les vulnérabilités de difficulté ≥ 3
-- Être capable de reproduire et expliquer chaque exploitation
 
-## Organisation
-- Un dossier par catégorie OWASP
-- Un fichier Markdown par challenge
-- Nommage conforme aux consignes du sujet
+- Identifier et exploiter des vulnérabilités de sécurité web
+- Résoudre des challenges OWASP Juice Shop de difficulté **≥ 3**
+- Documenter chaque vulnérabilité exploitée
+- Être capable de reproduire et expliquer chaque exploitation
+- Comprendre l’impact métier des failles de sécurité
+
+---
+
+## Méthodologie
+
+- Analyse fonctionnelle de l’application Juice Shop
+- Identification des surfaces d’attaque
+- Exploitation des vulnérabilités via différentes techniques de pentesting
+- Utilisation d’outils spécialisés (Burp Suite, navigateur, DevTools)
+- Rédaction de rapports techniques pour chaque challenge
+
+---
+
+## Organisation du repository
+
+Le repository est organisé par catégories OWASP.
+
