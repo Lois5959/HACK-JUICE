@@ -16,10 +16,11 @@ qui n’est pas documentée et qui peut être exploitée si elle est accessible 
 
 ## Méthodologie
 
-1. Explorer l’application pour identifier des zones ou fonctionnalités cachées.
-2. Mettre ftp dans l’url 
-3. Cliquer sur le ficher eastere.gg 
-4. Le telercharger en mettant dans l’url %2500.md 
+1. Explorer l’application afin de repérer des fonctionnalités ou fichiers non visibles depuis l’interface principale.
+2. Modifier manuellement l’URL pour accéder à un répertoire caché.
+3. Identifier un fichier lié à l’easter egg.
+4. Tester l’accès et le téléchargement de ce fichier. (%2500.md)
+5. Valider le challenge en accédant au contenu de l’easter egg.
 
 **Techniques utilisées :**
 - Exploration manuelle
@@ -34,16 +35,13 @@ qui n’est pas documentée et qui peut être exploitée si elle est accessible 
 - **Type :** Contrôle d’accès défaillant / fonctionnalité cachée accessible
 - **CWE :** CWE-284 (Contrôle d’accès incorrect)
 - **Composants affectés :** Fonctionnalité ou contenu caché
-- **Sévérité estimée :** Élevée
+- **Sévérité estimée :** Faible
 
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un utilisateur non autorisé de découvrir ou d’activer des fonctionnalités cachées, entraînant :
-- Divulgation d’informations sensibles ou non publiques
-- Atteinte à l’intégrité ou au fonctionnement de l’application
-- Risques réputationnels si ces contenus sont visibles par le public
+- Accès à des ressources non prévues
+- Découverte d’informations internes
 
 ---
 
@@ -51,13 +49,10 @@ Cette vulnérabilité permet à un utilisateur non autorisé de découvrir ou d�
 
 ### Atténuation
 - Restreindre l’accès aux fonctionnalités cachées aux utilisateurs autorisés uniquement.
-- Vérifier côté serveur toutes les actions déclenchées par des contenus non documentés.
 
 ### Correction
 - S’assurer que l’easter egg ou toute fonctionnalité cachée nécessite l’authentification et les droits appropriés.
 - Supprimer tout accès public non autorisé à des fonctionnalités sensibles.
 
 ### Bonnes pratiques
-- Principes du moindre privilège et de la défense en profondeur
-- Contrôles d’accès centralisés
 - Tester régulièrement l’application pour détecter des fonctionnalités cachées accessibles

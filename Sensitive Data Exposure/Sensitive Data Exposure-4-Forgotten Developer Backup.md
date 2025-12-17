@@ -42,12 +42,8 @@ présence de fichiers de sauvegarde ou de développement accessibles publiquemen
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant d’accéder à des données internes ou confidentielles, entraînant :
-- Divulgation de code source ou de configurations
-- Compromission de données sensibles
-- Facilitation d’attaques ultérieures
-- Risques juridiques et réputationnels
+- Fuite de code source ou secrets
+- Compromission totale de l’application
 
 ---
 

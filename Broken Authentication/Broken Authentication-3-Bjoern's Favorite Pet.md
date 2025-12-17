@@ -46,12 +46,8 @@ reposant sur des questions de sécurité prévisibles ou mal protégées.
 ---
 
 ## Risques
-
-Cette vulnérabilité permet :
-- La compromission de comptes utilisateurs
-- L’usurpation d’identité
-- L’accès non autorisé à des données personnelles
-- Une perte de confiance des utilisateurs dans le système d’authentification
+- Réinitialisation de comptes sans autorisation
+- Usurpation d’identité
 
 ---
 

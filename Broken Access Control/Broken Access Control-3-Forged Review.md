@@ -16,13 +16,18 @@ lors de la création ou de la modification des avis produits.
 
 ## Méthodologie
 
-1. Lancer Burp 
-2. Aller dans Proxy et activer Intercept 
-3. Retourner sur le site Juice Shop 
-4. Cliquer sur un produit et écrire une review 
-5. Cliquer sur Submit 
-6. Retourner sur Burp  
-7. Appuyer sur Foward 
+1. Lancer l’outil Burp Suite.
+2. Configurer le navigateur pour faire transiter le trafic HTTP via le proxy Burp.
+3. Activer l’interception des requêtes dans l’onglet « Proxy ».
+4. Accéder à l’application OWASP Juice Shop.
+5. Sélectionner un produit et rédiger un avis.
+6. Soumettre l’avis via le bouton de validation.
+7. Intercepter la requête HTTP envoyée lors de la soumission de l’avis.
+8. Analyser les paramètres transmis par le client dans la requête.
+9. Identifier les champs liés à l’utilisateur ou à l’avis existant.
+10. Modifier les paramètres permettant d’usurper ou de cibler un autre utilisateur.
+11. Transmettre la requête modifiée au serveur.
+12. Valider l’exploitation en constatant que l’avis est publié ou modifié au nom d’un autre utilisateur.
 
 **Techniques utilisées :**
 - Test de contrôle d’accès
@@ -40,33 +45,25 @@ lors de la création ou de la modification des avis produits.
 - **Type :** Contrôle d’accès défaillant (Broken Access Control)
 - **CWE :** CWE-284 (Contrôle d’accès incorrect)
 - **Composants affectés :** Système de gestion des avis produits
-- **Sévérité estimée :** Élevée
+- **Sévérité estimée :** Moyenne
 
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant de se faire passer pour un autre utilisateur
-ou de modifier ses contenus, entraînant :
-- Perte d’intégrité des données
-- Manipulation de l’opinion des utilisateurs
-- Atteinte à la crédibilité de la plateforme
-- Risques juridiques et réputationnels
+- Manipulation des avis
+- Impact sur la crédibilité des produits
+- Désinformation des utilisateurs
 
 ---
 
 ## Actions
 
 ### Atténuation
-- Vérifier les autorisations côté serveur pour toute création ou modification d’avis.
+- Vérifier que seul l’auteur peut créer ou modifier un avis
 - Restreindre les actions de modification aux seuls auteurs légitimes.
 
 ### Correction
-- Déterminer l’auteur d’un avis uniquement à partir du contexte de session côté serveur.
 - Empêcher toute modification d’un avis par un utilisateur non propriétaire.
-- Supprimer toute dépendance aux identifiants envoyés par le client.
 
 ### Bonnes pratiques
-- Principe du moindre privilège
-- Contrôles d’accès centralisés et systématiques
 - Validation stricte côté serveur pour toutes les actions sensibles

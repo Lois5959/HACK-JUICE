@@ -16,20 +16,22 @@ lors de la soumission de feedback dans l’application.
 
 ## Méthodologie
 
-1. Aller sur la page Customer Feedback 
-2. Lancer Burp 
-3. Aller sur Proxy 
-4. Activer Intercept 
-5. Retourner sur la page Customer Feedback 
-6. Mettre un commentaire 
-7. Mettre des étoiles et répondre au CAPTCHA 
-8. Retourner sur Burp 
-9. Changer la valeur du “UserId” 
+1. Accéder à la page « Customer Feedback » de l’application.
+2. Lancer l’outil Burp Suite.
+3. Configurer le navigateur pour intercepter le trafic via le proxy Burp.
+4. Activer l’interception des requêtes HTTP.
+5. Retourner sur la page « Customer Feedback ».
+6. Soumettre un nouveau feedback en renseignant un commentaire et une note.
+7. Compléter le CAPTCHA requis par l’application.
+8. Intercepter la requête HTTP envoyée lors de la soumission du feedback.
+9. Analyser les paramètres transmis dans la requête.
+10. Modifier la valeur du paramètre identifiant l’utilisateur (UserId).
+11. Transmettre la requête modifiée au serveur.
+12. Valider l’exploitation en constatant que le feedback est publié au nom d’un autre utilisateur.
 
 **Techniques utilisées :**
 - Test de contrôle d’accès
 - Manipulation de requêtes HTTP
-- Enumération
 
 **Outils :**
 - Navigateur web
@@ -42,18 +44,14 @@ lors de la soumission de feedback dans l’application.
 - **Type :** Contrôle d’accès défaillant (Broken Access Control)
 - **CWE :** CWE-284 (Contrôle d’accès incorrect)
 - **Composants affectés :** Système de gestion des feedbacks
-- **Sévérité estimée :** Élevée
+- **Sévérité estimée :** Moyenne
 
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant de se faire passer pour un autre utilisateur
-et de soumettre des feedbacks à sa place, entraînant :
-- Perte d’intégrité des données
-- Atteinte à la fiabilité des avis
-- Perte de confiance des utilisateurs
-- Risques réputationnels pour la plateforme
+- Usurpation d’identité
+- Altération du contenu utilisateur
+- Perte de confiance dans la plateforme
 
 ---
 

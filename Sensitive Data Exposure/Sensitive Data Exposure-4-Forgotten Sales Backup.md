@@ -41,13 +41,8 @@ sensibles, notamment des sauvegardes laissées accessibles publiquement.
 ---
 
 ## Risques
-
-Cette vulnérabilité peut entraîner :
-- Fuite d’informations commerciales sensibles
-- Accès à des données internes (clients, ventes, stratégies)
-- Avantage concurrentiel pour un attaquant
-- Atteinte grave à la réputation de l’entreprise
-- Risque légal et réglementaire
+- Fuite d’informations commerciales
+- Risques légaux et financiers
 
 ---
 

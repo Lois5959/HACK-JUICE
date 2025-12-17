@@ -7,11 +7,10 @@ Difficulté : 3
 ## Description
 
 **Énoncé du challenge :**  
-Se connecter avec les identifiants d’origine d’Amy.  
-(Il serait irréaliste de brute-forcer ces identifiants, mais une mauvaise gestion des données sensibles permet de les retrouver.)
+Se connecter avec les identifiants d’origine d’Amy.
 
-Ce challenge met en évidence une exposition de données sensibles due à une
-mauvaise gestion ou protection des informations d’authentification.
+Ce challenge démontre qu’une mauvaise protection des informations personnelles
+peut permettre de retrouver des identifiants valides sans attaque par force brute.
 
 ---
 
@@ -32,8 +31,6 @@ mauvaise gestion ou protection des informations d’authentification.
 
 **Outils :**
 - Navigateur web
-- DevTools
-- Outils d’analyse de données (optionnel)
 
 ---
 
@@ -47,25 +44,23 @@ mauvaise gestion ou protection des informations d’authentification.
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant d’obtenir des identifiants valides
-sans recourir à une attaque par force brute, entraînant :
-- Compromission de comptes utilisateurs
-- Accès non autorisé à des données personnelles
+- Compromission de comptes
 - Usurpation d’identité
-- Perte de confiance des utilisateurs et impact réputationnel
+- Fuite de données personnelles
 
 ---
 
 ## Actions
 
 ### Atténuation
-- Limiter l’exposition des informations liées aux comptes utilisateurs.
-- Surveiller et journaliser les tentatives d’accès anormales.
+- Réduire l’exposition d’informations liées aux utilisateurs.
+- Surveiller les tentatives de connexion suspectes.
 
 ### Correction
-- Protéger toute information sensible contre l’accès non autorisé.
+- Protéger correctement les identifiants utilisateurs.
+- Empêcher toute récupération indirecte d’informations sensibles.
 
 ### Bonnes pratiques
-- Respecter les recommandations OWASP concernant la gestion des mots de passe.
-- Réaliser des audits réguliers sur la protection des données sensibles.
+- Appliquer les recommandations OWASP sur la gestion des mots de passe.
+- Sensibiliser les utilisateurs à l’utilisation de mots de passe robustes.
+

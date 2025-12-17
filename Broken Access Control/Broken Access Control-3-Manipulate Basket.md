@@ -16,15 +16,17 @@ lors de la manipulation du panier dans l’application.
 
 ## Méthodologie
 
-1. Lancer Burp 
-2. Aller dans Proxy et activer Intercept 
-3. Aller sur Juice Shop  
-4. Mettre un article dans le panier 
-5. Retourner sur Burp 
-6. Envoyer au Repeater 
-7. Changer la valeur du “BasketId” 
-8. Ajouter un autre “BasketId” 
-9. Appuyer sur Send 
+1. Lancer l’outil Burp Suite.
+2. Configurer le navigateur afin que le trafic HTTP transite par le proxy Burp.
+3. Activer l’interception des requêtes dans l’onglet « Proxy ».
+4. Accéder à l’application OWASP Juice Shop.
+5. Ajouter un produit au panier depuis l’interface utilisateur.
+6. Intercepter la requête HTTP générée lors de l’ajout du produit au panier.
+7. Envoyer la requête interceptée vers l’outil Repeater de Burp Suite.
+8. Analyser les paramètres transmis par le client, notamment l’identifiant du panier (BasketId).
+9. Modifier la valeur du paramètre BasketId afin de cibler le panier d’un autre utilisateur.
+10. Rejouer la requête modifiée depuis le Repeater.
+11. Valider l’exploitation en constatant qu’un produit est ajouté au panier d’un autre utilisateur.
 
 **Techniques utilisées :**
 - Test de contrôle d’accès
@@ -47,12 +49,9 @@ lors de la manipulation du panier dans l’application.
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant d’ajouter des produits dans le panier d’un autre utilisateur, entraînant :
-- Perte d’intégrité des données
-- Manipulation des achats d’autrui
-- Atteinte à la crédibilité et confiance des utilisateurs
-- Risques financiers et réputationnels pour la plateforme
+- Modification frauduleuse de commandes
+- Impact financier
+- Atteinte à l’intégrité des données
 
 ---
 
@@ -65,9 +64,6 @@ Cette vulnérabilité permet à un attaquant d’ajouter des produits dans le pa
 ### Correction
 - Associer le panier exclusivement au compte utilisateur authentifié côté serveur.
 - Empêcher toute modification d’un panier par un utilisateur non autorisé.
-- Supprimer toute dépendance aux identifiants envoyés par le client pour déterminer le propriétaire du panier.
 
 ### Bonnes pratiques
-- Principe du moindre privilège
-- Contrôles d’accès centralisés et systématiques
 - Validation stricte côté serveur pour toutes les actions sensibles

@@ -45,12 +45,8 @@ contourner le mécanisme d’authentification de l’application.
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant de :
-- Accéder à des comptes utilisateurs sans autorisation
-- Consulter ou modifier des données personnelles
-- Exploiter le système pour des attaques plus avancées
-- Nuire à la réputation et à la confiance envers l’application
+- Accès illégal aux comptes utilisateurs
+- Exploitation généralisée de la faille
 
 ---
 

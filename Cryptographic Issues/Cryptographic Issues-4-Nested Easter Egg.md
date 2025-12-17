@@ -38,18 +38,13 @@ de mécanismes de chiffrement/encodage pouvant mener à la divulgation d’infor
 - **Type :** Mauvaise implémentation cryptographique
 - **CWE :** CWE-310 (Cryptographie insuffisante)
 - **Composants affectés :** Mécanisme de protection des données cachées
-- **Sévérité estimée :** Élevée
+- **Sévérité estimée :** Moyenne
 
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant d’exploiter des faiblesses cryptographiques afin
-d’accéder à des informations supposées être protégées, entraînant :
-- Divulgation d’informations sensibles
-- Contournement de mécanismes de sécurité
-- Atteinte à la confidentialité des données
-- Perte de confiance des utilisateurs
+- Accès à des informations protégées
+- Affaiblissement global de la sécurit
 
 ---
 

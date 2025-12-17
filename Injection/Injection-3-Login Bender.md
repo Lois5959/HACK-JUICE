@@ -37,7 +37,7 @@ contourner le mécanisme d’authentification de l’application.
 
 ## Vulnérabilités
 
-- **Type :** Injection (ex. injection SQL)
+- **Type :** Injection 
 - **CWE :** CWE-89 (Injection SQL)
 - **Composants affectés :** Système d’authentification
 - **Sévérité estimée :** Élevée
@@ -45,12 +45,9 @@ contourner le mécanisme d’authentification de l’application.
 ---
 
 ## Risques
-
-Cette vulnérabilité permet à un attaquant de contourner l’authentification, entraînant :
-- Accès non autorisé à des comptes utilisateurs
-- Exposition de données personnelles
-- Possibilité d’escalade de privilèges
-- Impact réputationnel pour l’application
+- Contournement de l’authentification
+- Accès non autorisé aux comptes
+- Compromission des données utilisateurs
 
 ---
 
