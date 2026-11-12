@@ -39,7 +39,7 @@ reposant sur des questions de sécurité prévisibles ou mal protégées.
 ## Vulnérabilités
 
 - **Type :** Authentification défaillante (Broken Authentication)
-- **CWE :** CWE-287 (Improper Authentication) 
+- **CWE :** CWE-287 (Authentification incorrecte) 
 - **Composants affectés :** Mécanisme de récupération de mot de passe
 - **Sévérité estimée :** Élevée
 

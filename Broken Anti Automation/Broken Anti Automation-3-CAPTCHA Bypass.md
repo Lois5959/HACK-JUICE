@@ -1,5 +1,5 @@
 # Challenge : CAPTCHA Bypass
-Catégorie : Broken Anti Automation
+Catégorie : Broken Anti Automation  
 Difficulté : 3  
 
 ---
@@ -9,7 +9,7 @@ Difficulté : 3
 **Énoncé du challenge :**  
 Soumettre 10 feedbacks ou plus en moins de 20 secondes.
 
-Ce challenge met en évidence une protection anti‑automatisation inefficace,
+Ce challenge met en évidence une protection anti-automatisation inefficace,
 permettant de soumettre plusieurs requêtes identiques sans contrôle réel
 
 ---
@@ -38,7 +38,7 @@ permettant de soumettre plusieurs requêtes identiques sans contrôle réel
 ## Vulnérabilités
 
 - **Type :** Broken Anti Automation
-- **CWE :** CWE‑307 (Improper Restriction of Excessive Authentication Attempts)
+- **CWE :** CWE-307 (Restriction insuffisante des tentatives d’authentification)
 - **Composants affectés :** CAPTCHA / limitation des requêtes
 - **Sévérité estimée :** Moyenne
 
@@ -64,4 +64,4 @@ permettant de soumettre plusieurs requêtes identiques sans contrôle réel
 
 ### Bonnes pratiques
 - Combiner CAPTCHA et rate limiting.
-- Tester régulièrement les mécanismes anti‑automatisation.
+- Tester régulièrement les mécanismes anti-automatisation.

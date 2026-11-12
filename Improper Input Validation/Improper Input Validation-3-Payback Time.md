@@ -1,5 +1,5 @@
 # Challenge : Payback Time
-Catégorie : Improper Input Validation 
+Catégorie : Improper Input Validation  
 Difficulté : 3  
 
 ---
@@ -42,7 +42,7 @@ permettant de manipuler des valeurs numériques sensibles lors du processus de c
 ## Vulnérabilités
 
 - **Type :** Validation incorrecte des entrées (Improper Input Validation)
-- **CWE :** CWE‑20 (Validation incorrecte des entrées)
+- **CWE :** CWE-20 (Validation incorrecte des entrées)
 - **Composants affectés :** Gestion du panier / calcul du prix
 - **Sévérité estimée :** Élevée
 

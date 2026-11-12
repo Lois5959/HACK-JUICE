@@ -34,7 +34,7 @@ sensibles, notamment des sauvegardes laissées accessibles publiquement.
 ## Vulnérabilités
 
 - **Type :** Exposition de données sensibles
-- **CWE :** CWE-200 (Exposure of Sensitive Information)
+- **CWE :** CWE-200 (Exposition d’informations sensibles)
 - **Composants affectés :** Serveur web / système de stockage des fichiers
 - **Sévérité estimée :** Critique
 
