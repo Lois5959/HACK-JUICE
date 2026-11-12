@@ -17,12 +17,12 @@ contourner le mécanisme d’authentification de l’application.
 ## Méthodologie
 
 1. Aller sur la page login 
-2. Mettre l’adresse mail de bender trouvé dans la review d’un produit 
-3. Mettre abcd en mot de passe 
-4. Aller sur burp activer intecept  
-5. Cliquer sur login 
-6. Mettre ‘-- à coter de l’adresse mail dans burp 
-7. Appuyer sur forward  
+2. Saisir l’adresse e-mail de Bender (visible dans l’avis d’un produit).
+3. Saisir n’importe quel mot de passe (ex : `abcd`).
+4. Dans Burp Suite, activer l’interception (Proxy > Intercept is on).
+5. Cliquer sur « Log in ».
+6. Dans la requête interceptée, ajouter `'--` juste après l’adresse e-mail : la suite de la requête SQL (le test du mot de passe) est alors mise en commentaire.
+7. Cliquer sur « Forward » : la connexion réussit sans connaître le mot de passe.
 
 **Techniques utilisées :**
 - Test d’injection
